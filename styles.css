@@ -34,11 +34,17 @@ header {
   margin: auto;
   padding: 0 30px;
 }
-
-.gt-grid {
+.gt-grid-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.gt-grid {
+  display: flex;
+  flex-wrap: wrap;
+
   align-items: center;
   width: 100%;
 }
@@ -320,6 +326,10 @@ li.hire-us a:hover {
   width: 100%;
   vertical-align: middle;
 }
+.gt-box:hover .gt-thumbnail img {
+  opacity: 0.8; /* Slightly fade the image */
+  transition: opacity 0.3s, transform 0.3s;
+}
 
 .gt-box-detail h6 {
   margin: 16px 0 0;
@@ -403,20 +413,8 @@ img {
   transform: translateY(40px);
 }
 
-.gt-section-header h1,
-.gt-section-header h2,
-.gt-section-header h3,
-.gt-section-header h4,
-.gt-section-header h5,
-.gt-section-header h6 {
-  margin-top: 0;
-}
 h2 {
   font-size: 2.5rem;
-}
-
-h2 {
-  font-family: var(--font-secondary);
   font-weight: 400;
   letter-spacing: 0;
   line-height: 1.2;
@@ -440,8 +438,6 @@ h2 {
 
 p {
   margin-bottom: 16px;
-}
-p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
@@ -509,6 +505,9 @@ user agent stylesheet img {
   margin-top: -1px;
   flex-direction: column;
   text-align: center;
+}
+.gt-icon-box.gt-style-1:hover {
+  box-shadow: 10px 10px 101px -41px rgba(0, 0, 0, 0.75);
 }
 .gt-grid.gt-spacing-15 > .gt-grid-col {
   padding: 15px;
